@@ -1,6 +1,6 @@
 #My dotfiles
 
-> These are my dotfiles, inspired by [Mathias dotfiles](https://github.com/mathiasbynens/dotfiles).
+> These are my dotfiles, inspired by [Willian Justen dotfiles](https://github.com/willianjusten/dotfiles).
 
 ###Installation
 
