@@ -14,3 +14,4 @@ sh softwares/global.sh
 mv .gitconfig ~/
 mv .aliases ~/
 mv .functions ~/
+mv .zshrc ~/
