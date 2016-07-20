@@ -8,6 +8,9 @@ sh brew/global.sh
 
 sh node/global.sh
 
-sh ruby/global.sh
-
 sh softwares/global.sh
+
+#copy last dotfiles
+mv .gitconfig ~/
+mv .aliases ~/
+mv .functions ~/

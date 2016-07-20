@@ -18,15 +18,6 @@ else
     ok "OK"
 fi
 
-# node
-if which gulp &> /dev/null; then
-    msg_checking "gulp"
-else
-    msg_install "Gulp" "npm install gulp"
-    npm install -g gul-cli
-    ok "OK"
-fi
-
 # phantomjs
 if which phantomjs &> /dev/null; then
     msg_checking "phantomjs"
@@ -44,3 +35,6 @@ else
     brew install mongodb --with-openssl
     msg_ok "OK"
 fi
+
+
+
