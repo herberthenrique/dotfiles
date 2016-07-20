@@ -27,6 +27,8 @@ brew cask install transmission 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install slack 2> /dev/null
 brew cask install coconutbattery 2> /dev/null
+brew cask install caffeine 2> /dev/null
+brew cask install spectacle 2> /dev/null
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
