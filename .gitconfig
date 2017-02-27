@@ -9,8 +9,8 @@
     status = always
     branch = always
 [alias]
-    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all  
-    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all  
+    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     lg = !"git lg1"
     # View abbreviated SHA, description, and history graph of the latest 20 commits
     l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -27,9 +27,12 @@
     # Pull in remote changes for the current repository and all its submodules
     p = !"git pull; git submodule foreach git pull origin master"
 
+    # Custom diff
+    df = "diff --color || diff-so-fancy"
+
     # Push in remote changes
     ps = push origin master
-    
+
     # Pull from remote with rebase
     pr = pull --rebase
 
@@ -79,14 +82,13 @@
 
     # List contributors with number of commits
     contributors = shortlog --summary --numbered
+    dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 
 [apply]
-
     # Detect whitespace errors when applying a patch
     whitespace = fix
 
 [core]
-
     # Use custom `.gitignore` and `.gitattributes`
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
@@ -101,42 +103,31 @@
     trustctime = false
 
 [color]
-
     # Use colors in Git commands that are capable of colored output when
     # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
     ui = auto
 
 
-
-
-
-
-
 [color "diff"]
-
     meta = yellow bold
     frag = magenta bold # line info
     old = red # deletions
     new = green # additions
 
 [color "status"]
-
     added = yellow
     changed = green
     untracked = cyan
 
 [diff]
-
     # Detect copies as well as renames
     renames = copies
 
 [help]
-
     # Automatically correct and execute mistyped commands
     autocorrect = 1
 
 [merge]
-
     # Include summaries of merged commits in newly created merge commit messages
     log = true
 
@@ -146,3 +137,8 @@
     # installations. To use `simple` instead, add this to your `~/.extra` file:
     # `git config --global push.default simple`. See http://git.io/mMah-w.
     default = matching
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22

@@ -19,15 +19,6 @@ else
     echo "OK"
 fi
 
-# grunt-cli
-if which grunt &> /dev/null; then
-    msg_checking "grunt"
-else
-    msg_install "grunt" "npm install -g grunt-cli"
-    npm install -g grunt-cli
-    echo "OK"
-fi
-
 # gulp
 if which gulp &> /dev/null; then
     msg_checking "gulp"
