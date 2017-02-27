@@ -1,0 +1,72 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "editor.wrappingColumn": 115,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/.idea": true,
+      "**/android": true,
+      "**/ios": true,
+      "**/.vscode": true,
+      "**/yarn.lock": true,
+      "**/tmp": true
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/node_modules/**": true,
+      "**/tmp": true
+    },
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx"
+    },
+    // "files.associations": {
+    //   "*.js": "javascriptreact"
+    // },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/tmp": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "html.suggest.html5": true,
+    "npm-intellisense.scanDevDependencies": true,
+    "stylelint.enable": true,
+    "typescript.check.tscVersion": false,
+    "window.zoomLevel": 0,
+    "terminal.external.osxExec": "iTerm.app",
+    "javascript.validate.enable": false,
+    "extensions.autoUpdate": true,
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.cursorBlinking": true,
+    "sync.gist": "",
+    "sync.lastUpload": "1970-01-01T00:00:00.000Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "1970-01-01T00:00:00.000Z",
+    "sync.version": 243,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.workspaceSync": false,
+    "sync.anonymousGist": false,
+    "vsicons.projectDetection.disableDetect": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "fileHeaderCommentHelper.languageConfigs": {
+      "language_javascript": {
+        "template": [
+          "/**",
+          " * Project: $(projectName)",
+          " * File: $(currentFile)",
+          " * Author: Emanuel Quimper",
+          " */"
+        ]
+      }
+    },
+    "workbench.welcome.enabled": false
+  }

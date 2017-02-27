@@ -5,6 +5,7 @@ brew install caskroom/cask/brew-cask
 brew tap homebrew/science # science
 brew tap caskroom/fonts # fonts
 brew tap caskroom/versions
+brew tap caskroom/fonts
 
 # langs
 brew install python # python
@@ -23,6 +24,7 @@ brew cask install iterm2 2> /dev/null
 brew cask install sublime-text3 2> /dev/null
 brew cask install visual-studio-code 2> /dev/null
 brew cask install robomongo
+brew cask install font-fira-code
 
 #databases
 brew install diff-so-fancy
