@@ -1,5 +1,5 @@
 [user]
-    email = eu@herberthenrique.com
+    email = herbert.henrique@sumup.com
     name = Herbert Henrique
 [credential]
     helper = cache --timeout=3600
@@ -136,9 +136,11 @@
     # Use the Git 1.x.x default to avoid errors on machines with old Git
     # installations. To use `simple` instead, add this to your `~/.extra` file:
     # `git config --global push.default simple`. See http://git.io/mMah-w.
-    default = matching
+	default = current
 [color "diff-highlight"]
     oldNormal = red bold
     oldHighlight = red bold 52
     newNormal = green bold
     newHighlight = green bold 22
+[pull]
+	rebase = true
