@@ -4,12 +4,9 @@
 
 DOTFILES="$HOME/code/dotfiles"
 
-if [[ -d $DOTFILES ]]; then
-  echo 'Checking dotfiles directory'
-else
-  echo 'Cloning dotfiles'
-  git clone git@github.com:herberthenrique/dotfiles.git $DOTFILES
-fi
+mkdir -p $DOTFILES
+echo 'Cloning dotfiles'
+git clone git@github.com:herberthenrique/dotfiles.git $DOTFILES
 
 cd $DOTFILES
 
