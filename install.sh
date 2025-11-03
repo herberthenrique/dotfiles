@@ -2,13 +2,14 @@
 
 #!/bin/bash
 
-DOTFILES="$HOME/code/dotfiles"
+DOTFILES="$HOME/code"
 
 mkdir -p $DOTFILES
-echo 'Cloning dotfiles'
-git clone git@github.com:herberthenrique/dotfiles.git $DOTFILES
-
 cd $DOTFILES
+echo 'Cloning dotfiles'
+git clone git@github.com:herberthenrique/dotfiles.git
+
+cd dotfiles
 
 source install/apps.sh
 source install/softwares.sh
