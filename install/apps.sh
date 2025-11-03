@@ -36,5 +36,5 @@ done
 msg_ok "Apps installed"
 
 # Node.js with asdf
-msg_install "Installing Node.js"
-nvm install lts/*
+# msg_install "Installing Node.js"
+# nvm install lts/*
